@@ -52,6 +52,10 @@ _The program reads in a person's age in earth years and returns their life expec
 * Input: "25"
 * Output: "208.33"
 
+_The program reads in a person's age in earth years and returns their life expectancy in other planet years, assuming average lifespan to be 75_
+* Input: "25"
+* Output: "208.33"
+
 ## Support and Contact Details
 _For issues contact support@leepedersen.com_
 

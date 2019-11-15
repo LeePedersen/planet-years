@@ -32,4 +32,9 @@ describe('Age', () => {
     newAge.expectancy();
     expect(newAge.earthExpect).toEqual(50);
   });
+
+  test('should check if expectancy prototype returns expectancy on mercury', () => {
+    newAge.expectancy();
+    expect(newAge.mercuryExpect).toEqual("208.33");
+  });
 });
