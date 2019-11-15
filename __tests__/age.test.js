@@ -2,7 +2,7 @@ import { Age } from './../src/age.js';
 
 describe('Age', () => {
 
-  let newAge = new Age("25")
+  let newAge = new Age("25");
 
   test('should check if earthAge returns same age', () => {
     expect(newAge.earthAge).toEqual("25");
