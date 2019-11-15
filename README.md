@@ -20,10 +20,9 @@ _No known bugs_
 * _Open in browser_
 
 ## Specs
-
-_The program reads toppings input from checkboxes into an array in a Pizza object and returns that array_<br>
-_Input: "jalapenos"_<br>
-_Output: "jalapenos"_<br>
+_The program reads in a person's age in earth years and returns their age in earth years_
+* Input: "25"
+* Output: "25"
 
 ## Support and Contact Details
 _For issues contact support@leepedersen.com_
