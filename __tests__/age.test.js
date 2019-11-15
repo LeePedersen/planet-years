@@ -2,9 +2,14 @@ import { Age } from './../src/age.js';
 
 describe('Age', () => {
 
-  test('should check if earthAge prototype returns same age', () => {
-    let newAge = new Age("25")
+  let newAge = new Age("25")
+
+  test('should check if earthAge returns same age', () => {
     expect(newAge.earthAge).toEqual("25");
   });
 
+  test('should check if mercuryAge prototype returns age on mercury', () => {
+    newAge.mercuryAge();
+    expect(newAge.mercAge).toEqual("104.166666667");
+  });
 });
