@@ -44,6 +44,9 @@ _The program reads in a person's age in earth years and returns their age in ven
 * Input: "25"
 * Output: "104.17"
 
+_The program reads in a person's age in earth years and returns their life expectancy in earth years, assuming average lifespan to be 75_
+* Input: "25"
+* Output: "50"
 
 ## Support and Contact Details
 _For issues contact support@leepedersen.com_
