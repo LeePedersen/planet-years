@@ -8,8 +8,8 @@ describe('Age', () => {
     expect(newAge.earthAge).toEqual("25");
   });
 
-  test('should check if mercuryAge prototype returns age on mercury', () => {
-    newAge.mercuryAge();
-    expect(newAge.mercAge).toEqual("104.166666667");
+  test('should check if mercury prototype returns age on mercury', () => {
+    newAge.mercury();
+    expect(newAge.mercuryAge).toEqual("104.17");
   });
 });
