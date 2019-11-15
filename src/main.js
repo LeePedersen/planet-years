@@ -5,5 +5,5 @@ import './styles.css';
 import { AgeExpect } from './ageExpect.js';
 
 $(document).ready(function() {
-  
-})
+
+});

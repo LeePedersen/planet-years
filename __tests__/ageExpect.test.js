@@ -46,9 +46,16 @@ describe('AgeExpect', () => {
     expect(newAge.marsExpect).toEqual("26.60");
   });
 
-  test('should check if earthExpect returns life expectancy in earth years, returning negative number', () => {
+  test('should check if earthExpect returns amount over life expectancy in earth years as a negative number', () => {
     let newPerson = new AgeExpect("80", "none", "12000", "cisfemale");
     newPerson.expectCalc();
     expect(newPerson.earthExpect).toEqual(-5);
+  });
+
+  test('should check if mars prototype returns amount over life expectancy in mars years as a negative number', () => {
+    let newPerson = new AgeExpect("80", "none", "12000", "cisfemale");
+    newPerson.expectCalc();
+    newPerson.mars();
+    expect(newPerson.marsExpect).toEqual("-2.66");
   });
 });

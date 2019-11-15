@@ -24,7 +24,7 @@ export class AgeExpect {
   mars() {
     let marsAge = parseFloat(this.age) / 1.88;
     this.marsAge = marsAge.toFixed(2);
-    let marsExpect = parseFloat(this.earthExpect / 1.88);
+    let marsExpect = parseFloat(this.earthExpect) / 1.88;
     this.marsExpect = marsExpect.toFixed(2);
   }
 
@@ -54,13 +54,7 @@ export class AgeExpect {
     } else if (this.gender === "nonbinary" || this.gender === "other"){
       expect -= 10;
     }
-    if (this.age > expect) {
-      overExpect = parseInt(this.age) - expect;
-      this.
-    } else {
-      expect = expect - parseInt(this.age);
-      this.earthExpect = expect;
-    }
-
+    expect = expect - parseInt(this.age);
+    this.earthExpect = expect;
   }
 }

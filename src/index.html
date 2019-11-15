@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Planet Year Calculator</title>
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Planet Year Calculator</h1>
+      </div>
+      <form>
+        <div>
+          <label for="age">Enter your age:</label>
+          <input type="text" id="age">
+        </div>
+        <div>
+          <label for="gender">Select the gender that is most accurate</label>
+          <select id="gender">
+            <option selected disabled>Select one</option>
+            <option value="transmale">Transgender male</option>
+            <option value="cisfemale">Cisgender female</option>
+            <option value="nonbinary">Nonbinary</option>
+            <option value="cismale">Transgender male</option>
+            <option value="transfemale">Transgender female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="income">Enter your average yearly income</label>
+          <input type="text" id="income">
+        </div>
+      </form>
+    </div>
   </body>
 </html>
