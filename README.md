@@ -24,6 +24,10 @@ _The program reads in a person's age in earth years and returns their age in ear
 * Input: "25"
 * Output: "25"
 
+_The program reads in a person's age in earth years and returns their age in mercury years_
+* Input: "25"
+* Output: "104.16"
+
 ## Support and Contact Details
 _For issues contact support@leepedersen.com_
 
