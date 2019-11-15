@@ -1,6 +1,6 @@
 export class Age {
-  constructor(initialAge) {
-    this.earthAge = initialAge;
+  constructor(age, mentalHealth, income, gender) {
+    this.earthage = age;
   }
 
   mercury() {

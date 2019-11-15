@@ -64,6 +64,10 @@ _The program reads in a person's age, mental health, income, and gender, and ret
 * Input: "25, severe, 14000, trans male"
 * Output: "125"
 
+_The program is refactored to comply with the rubric_
+* Input: "25, severe, 14000, trans male"
+* Output: Mercury age: "208.33" Mercury life expectancy: "125"
+
 ## Support and Contact Details
 _For issues contact support@leepedersen.com_
 
