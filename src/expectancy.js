@@ -7,25 +7,25 @@ export class Expectancy {
   }
 
   expectCalc() {
-    const earthExpect = 75;
-    if (mentalHealth === "severe") {
+    let earthExpect = 75;
+    if (this.mentalHealth === "severe") {
       earthExpect -= 23;
-    } else if (mentalHealth === "moderate") {
+    } else if (this.mentalHealth === "moderate") {
       earthExpect -= 5;
     }
-    if (this.income < 10,000) {
+    if (this.income < 10000) {
       earthExpect -= 10;
     }
-    if (gender === "cismale") {
+    if (this.gender === "cismale") {
       earthExpect -= 5;
-    } else if (gender === "transmale") {
+    } else if (this.gender === "transmale") {
       earthExpect -= 10;
-    } else if (gender === "transwoman") {
+    } else if (this.gender === "transwoman") {
       earthExpect -= 15;
-    } else if (gender === "nonbinary" || gender === "other"){
+    } else if (this.gender === "nonbinary" || this.gender === "other"){
       earthExpect -= 10;
     }
-    earthExpect = earthExpect - age;
+    earthExpect = earthExpect - parseInt(this.age);
     return earthExpect;
   }
 }
