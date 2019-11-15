@@ -26,13 +26,29 @@
           </select>
         </div>
         <div>
+          <label for="mentalHealth">Select the level of mental health issues that you experience</label>
+          <select id="mentalHealth">
+            <option selected disabled>Select one</option>
+            <option value="mild">Mild</option>
+            <option value="moderate">Moderate</option>
+            <option value="severe">Severe</option>
+          </select>
+        </div>
+        <div>
           <label for="income">Enter your average yearly income</label>
           <input type="text" id="income">
         </div>
         <button type="submit" name="button">Submit</button>
       </form>
       <div class="results">
-
+        <p id="mercury"></p>
+        <p id="mercuryExp"></p>
+        <p id="venus"></p>
+        <p id="venusExp"></p>
+        <p id="mars"></p>
+        <p id="marsExp"></p>
+        <p id="jupiter"></p>
+        <p id="jupiterExp"></p>
       </div>
     </div>
   </body>
