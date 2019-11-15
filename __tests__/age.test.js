@@ -1,11 +1,11 @@
-import { Age } from './../src/age.js';
+import { AgeExpect } from './../src/ageExpect.js';
 
-describe('Age', () => {
+describe('AgeExpect', () => {
 
-  let newAge = new Age("25");
+  let newAge = new AgeExpect("25", "moderate", "9000", "cismale");
 
   test('should check if earthAge returns same age', () => {
-    expect(newAge.earthAge).toEqual("25");
+    expect(newAge.age).toEqual("25");
   });
 
   test('should check if mercury prototype returns age on mercury', () => {
