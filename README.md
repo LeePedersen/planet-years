@@ -56,6 +56,10 @@ _The program reads in a person's age in earth years and returns their life expec
 * Input: "25"
 * Output: "208.33"
 
+_The program reads in a person's age, mental health, income, and gender, and returns their life expectancy in earth years._
+* Input: "25, bipolar, >10,000, trans male"
+* Output: "30 yrs"
+
 ## Support and Contact Details
 _For issues contact support@leepedersen.com_
 

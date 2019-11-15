@@ -22,12 +22,4 @@ export class Age {
     let jupiterAge = parseFloat(this.earthAge) / 11.86;
     this.jupiterAge = jupiterAge.toFixed(2);
   }
-
-  expectancy() {
-    let earthExpect = 75 - parseFloat(this.earthAge);
-    this.earthExpect = earthExpect;
-    let mercuryExpect = 75 / .24 - this.mercuryAge;
-    this.mercuryExpect = mercuryExpect.toFixed(2);
-
-  }
 }
