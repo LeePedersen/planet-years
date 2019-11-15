@@ -2,7 +2,7 @@ import { AgeExpect } from './../src/ageExpect.js';
 
 describe('AgeExpect', () => {
 
-  let newAge = new AgeExpect("25", "moderate", "9000", "cismale");
+  let newAge = new AgeExpect("25", "none", "12000", "cisfemale");
 
   test('should check if earthAge returns same age', () => {
     expect(newAge.age).toEqual("25");
@@ -23,8 +23,26 @@ describe('AgeExpect', () => {
     expect(newAge.marsAge).toEqual("13.30");
   });
 
+  test('should check if earthExpect returns life expectancy in earth years', () => {
+    newAge.expectCalc();
+    expect(newAge.earthExpect).toEqual(50);
+  });
+
   test('should check if jupiter prototype returns age on jupiter', () => {
+    newAge.expectCalc();
     newAge.jupiter();
     expect(newAge.jupiterAge).toEqual("2.11");
+  });
+
+  test('should check if jupiter prototype returns life expectancy on jupiter', () => {
+    newAge.expectCalc();
+    newAge.jupiter();
+    expect(newAge.jupiterExpect).toEqual("4.22");
+  });
+
+  test('should check if mars prototype returns life expectancy on mars', () => {
+    newAge.expectCalc();
+    newAge.mars();
+    expect(newAge.marsExpect).toEqual("26.60");
   });
 });
