@@ -30,6 +30,6 @@ describe('Age', () => {
 
   test('should check if expectancy prototype returns expectancy on earth', () => {
     newAge.expectancy();
-    expect(newAge.earthExpect).toEqual("50");
+    expect(newAge.earthExpect).toEqual(50);
   });
 });
