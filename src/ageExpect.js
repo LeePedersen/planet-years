@@ -55,10 +55,12 @@ export class AgeExpect {
       expect -= 10;
     }
     if (this.age > expect) {
-      expect = parseInt(this.age) - expect;
+      overExpect = parseInt(this.age) - expect;
+      this.
     } else {
       expect = expect - parseInt(this.age);
+      this.earthExpect = expect;
     }
-    this.earthExpect = expect;
+
   }
 }

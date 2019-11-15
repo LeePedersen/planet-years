@@ -72,6 +72,10 @@ _Given an earth age greater than life expectancy, program returns the earth numb
 * Input: "80"
 * Output: 5
 
+_Given an earth age greater than life expectancy, program returns the earth number of years over life expectancy they are, and distinguishes it from life expectancy_
+* Input: "80"
+* Output: 5 years over life expectancy
+
 ## Support and Contact Details
 _For issues contact support@leepedersen.com_
 
