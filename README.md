@@ -68,6 +68,10 @@ _The program is refactored to comply with the rubric_
 * Input: "25, severe, 14000, trans male"
 * Output: Mercury age: "208.33" Mercury life expectancy: "125"
 
+_Given an earth age greater than life expectancy, program returns the earth number of years over life expectancy they are_
+* Input: "80"
+* Output: 5
+
 ## Support and Contact Details
 _For issues contact support@leepedersen.com_
 

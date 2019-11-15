@@ -45,4 +45,10 @@ describe('AgeExpect', () => {
     newAge.mars();
     expect(newAge.marsExpect).toEqual("26.60");
   });
+
+  test('should check if earthExpect returns life expectancy in earth years', () => {
+    let newPerson = new AgeExpect("80", "none", "12000", "cisfemale");
+    newPerson.expectCalc();
+    expect(newPerson.earthExpect).toEqual(5);
+  });
 });

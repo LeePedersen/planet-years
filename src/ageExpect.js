@@ -49,12 +49,16 @@ export class AgeExpect {
       expect -= 5;
     } else if (this.gender === "transmale") {
       expect -= 10;
-    } else if (this.gender === "transwoman") {
+    } else if (this.gender === "transfemale") {
       expect -= 15;
     } else if (this.gender === "nonbinary" || this.gender === "other"){
       expect -= 10;
     }
-    expect = expect - parseInt(this.age);
+    if (this.age > expect) {
+      expect = parseInt(this.age) - expect;
+    } else {
+      expect = expect - parseInt(this.age);
+    }
     this.earthExpect = expect;
   }
 }
