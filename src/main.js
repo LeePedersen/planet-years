@@ -20,13 +20,22 @@ $(document).ready(function() {
     newAge.jupiter();
     newAge.venus();
 
-    $("#mercury").text("Your age on Mercury: " + newAge.mercuryAge + " years");
-    $("#mercuryExp").text("Your life expectancy on Mercury: " + newAge.mercuryExpect + " more years");
-    $("#venus").text("Your age on Venus: " + newAge.venusAge + " years");
-    $("#venusExp").text("Your life expectancy on Venus: " + newAge.venusExpect + " more years");
-    $("#mars").text("Your age on Mars: " + newAge.marsAge + " years");
-    $("#marsExp").text("Your life expectancy on Mars: " + newAge.marsExpect + " more years");
-    $("#jupiter").text("Your age on Jupiter: " + newAge.jupiterAge + " years");
-    $("#jupiterExp").text("Your life expectancy on Jupiter: " + newAge.jupiterExpect + " more years");
+    if (newAge.earthExpect < 0) {
+      newAge.mercuryExpect = "you are " + (newAge.mercuryExpect * -1) + " Mercury years past life expectancy";
+      newAge.venusExpect = "you are " + (newAge.venusExpect * -1) + " Venus years past life expectancy";
+      newAge.marsExpect = "you are " + (newAge.marsExpect * -1) + " Mars years past life expectancy";
+      newAge.jupiterExpect = "you are " + (newAge.jupiterExpect * -1) + " Jupiter years past life expectancy";
+    }
+
+    $("#info").hide();
+    $("#mercury").text("Your age in Mercury years: " + newAge.mercuryAge);
+    $("#mercuryExp").text("Your life expectancy in Mercury years: " + newAge.mercuryExpect);
+    $("#venus").text("Your age in Venus years: " + newAge.venusAge);
+    $("#venusExp").text("Your life expectancy in Venus years: " + newAge.venusExpect);
+    $("#mars").text("Your age in Mars years: " + newAge.marsAge);
+    $("#marsExp").text("Your life expectancy in Mars years: " + newAge.marsExpect);
+    $("#jupiter").text("Your age in Jupiter years: " + newAge.jupiterAge);
+    $("#jupiterExp").text("Your life expectancy in Jupiter years: " + newAge.jupiterExpect);
+
   });
 });

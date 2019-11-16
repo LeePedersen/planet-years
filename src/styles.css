@@ -1,0 +1,11 @@
+body {
+  background-image: url(https://vignette.wikia.nocookie.net/the-martian/images/5/50/Wiki-background/revision/latest?cb=20150608133244);
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+}
+
+#info, .results, .jumbotron {
+  background-color: rgba(254, 113, 30, .6);
+  padding: 30px;
+}
