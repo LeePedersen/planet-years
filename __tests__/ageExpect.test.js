@@ -2,7 +2,7 @@ import { AgeExpect } from './../src/ageExpect.js';
 
 describe('AgeExpect', () => {
 
-  let newAge = new AgeExpect("25", "none", "12000", "cisfemale");
+  const newAge = new AgeExpect("25", "none", "12000", "cisfemale");
 
   test('should check if earthAge returns same age', () => {
     expect(newAge.age).toEqual("25");

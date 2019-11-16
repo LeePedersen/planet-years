@@ -8,28 +8,28 @@ export class AgeExpect {
   }
 
   mercury() {
-    let mercAge = parseFloat(this.age) / .24;
+    const mercAge = parseFloat(this.age) / .24;
     this.mercuryAge = mercAge.toFixed(2);
     let mercuryExpect = parseFloat(this.earthExpect / .24);
     this.mercuryExpect = mercuryExpect.toFixed(2);
   }
 
   venus() {
-    let venusAge = parseFloat(this.age) / .62;
+    const venusAge = parseFloat(this.age) / .62;
     this.venusAge = venusAge.toFixed(2);
     let venusExpect = parseFloat(this.earthExpect / .62);
     this.venusExpect = venusExpect.toFixed(2);
   }
 
   mars() {
-    let marsAge = parseFloat(this.age) / 1.88;
+    const marsAge = parseFloat(this.age) / 1.88;
     this.marsAge = marsAge.toFixed(2);
     let marsExpect = parseFloat(this.earthExpect) / 1.88;
     this.marsExpect = marsExpect.toFixed(2);
   }
 
   jupiter() {
-    let jupiterAge = parseFloat(this.age) / 11.86;
+    const jupiterAge = parseFloat(this.age) / 11.86;
     this.jupiterAge = jupiterAge.toFixed(2);
     let jupiterExpect = parseFloat(this.earthExpect / 11.86);
     this.jupiterExpect = jupiterExpect.toFixed(2);
